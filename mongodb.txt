@@ -1,0 +1,79 @@
+ 
+              
+                            MongoDB
+                         -------------
+
+  1. Database used to store data permanently
+  2. Difference SQL vs MongoDB
+
+
+                 SQL                                              MongoDB
+              ---------                                       ---------------
+
+      > Relational /SQL DBMS                               > Document Oriented/ NOSQL DB 
+
+      > store in Table with row & Column                   > Collection of JSON Document
+
+      > Uses fixed Schema                                  > Uses dynamic Schema
+
+      > Optimize complex joins and transactions            > Optmized for Scalability and Performance 
+
+      > Support rich set of data types                     > Limited set of data types
+
+      > Declarative query language                         > Expressive query language based on JSON 
+
+      > ACID property (Atomicity, Consistancy,             > NoSQL based on CAP (Consistancy,
+          Isolation and Durability)                             Availability and Partition Tolerance)
+
+      > Uses Traditional business Application              > Used in big data and real time web 
+                                                              Application
+      
+  3. CRUD Operations
+          -create
+               -insertMany()
+               -insertOne()
+           -Read
+               - find()
+               - findOne()
+            -update:
+               -updateMany()
+               - updateOne()
+            -Delete
+               -deleteMany()
+               -deleteOne()
+
+  4. complex query
+               - $eq / $neq
+               - $gt / $gte / $lt / $lte 
+               - $expr 
+               - $push 
+               - $pull 
+               - $set 
+               - $sunset
+               - $exists
+               - $or / $and
+               - $in/ $nin
+               - sort()
+               - count()
+               - limit()
+
+  5. Aggregate : to join different collection\
+                
+                {
+                  $lookup:
+                  {
+                   from: <collection to join>,
+                   localField: <field from the input documents>,
+                   foreignField: <field from the documents of the "from" collection>,
+                   as: <output array field>
+                   }
+                }
+
+
+  6. Data Modeling :
+
+        - schema - structure of data to be stored
+        - validation  
+
+
+                    
